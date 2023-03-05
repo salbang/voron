@@ -1,4 +1,4 @@
-Copy the set-gpio14-down.sh to /usr/lib/systemd/system-shutdown/
+Copy the set-gpio14-down.sh file to /usr/lib/systemd/system-shutdown/
 Use sudo cp set-gpio14-down.sh /usr/lib/systemd/system-shutdown/
 Check the permission and ownership are correct:
 pi@trident250:/usr/lib/systemd/system-shutdown $ ll
