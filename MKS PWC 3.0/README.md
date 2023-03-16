@@ -3,7 +3,7 @@
 ![RPi connnection](rpi_connection.png)
 
 You don't need to use POW-DET of MKS PWC 3.0.
-For POW-OFF, connect 5V to RPI 5V, GND to GND, and PW-OFF to GPIO-14 (UART0 TX). You may use PIN 2, 4, and 6 of GPIO which are in a row.
+For POW-OFF, connect 5V to RPI 5V, GND to GND, and PW-OFF to GPIO-14 (UART0 TX). You may use PIN 4, 6, and 8 of GPIO which are in a row.
 
 To make the PWC 3.0 keep powered on assuming you connected signal line of POWOFF of PWC 3.0 to GPIO14 (uart0), following line should be added to /boot/config.txt
 
