@@ -1,3 +1,6 @@
+# Disclaimer
+Wrong wiring can damage your raspberry pi, the mcu board, and PSU. Double check correct wiring with your unit wire in/out. I am not responsible for any damages due to wrong wiring. My diagram may contain wrong connection. Please double check. Report to me if you find any error.
+
 # Soft power on-off using MKS PWC 3.0
 
 ![RPi connnection](rpi_connection.png)
