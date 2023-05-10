@@ -26,6 +26,11 @@ You may do <br/>
 sudo chown root set-gpio-14-down.sh <br/>
 sudo chgrp root set-gpio-14-down.sh <br/>
 
+# Power-off switch
+https://raspberrypi.stackexchange.com/questions/117013/raspberry-pi-4-b-gpio-boot-and-shutdown-buttons
+
+
+
 # Official documentation of the product
 https://github.com/makerbase-mks/MKS-Power-Control/wiki/MKS-PWC-V3.0-user-Manual
 
