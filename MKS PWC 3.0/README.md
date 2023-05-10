@@ -41,3 +41,7 @@ https://github.com/makerbase-mks/MKS-Power-Control/wiki/MKS-PWC-V3.0-user-Manual
 
 # For button mount
 https://www.thingiverse.com/thing:4222174
+
+# Examples
+![Trident](trident_250.jpg)
+![2.4 R2](2.4r2_350.jpg)
