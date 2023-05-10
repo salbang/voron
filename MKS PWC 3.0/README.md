@@ -32,7 +32,7 @@ https://raspberrypi.stackexchange.com/questions/117013/raspberry-pi-4-b-gpio-boo
 
 Power soft button power off, you need a separate momentary switch with 24v LED. 16mm switch is recommended to use the button mount for the skirt. After wiring to the raspberry pi, you need to add the following lines to /boot/config.txt
 
-\# For shutdown
+\# For shutdown <br/>
 dtoverlay=gpio-shutdown,gpio_pin=21
 
 
