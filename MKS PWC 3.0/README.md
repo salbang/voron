@@ -28,7 +28,12 @@ sudo chgrp root set-gpio-14-down.sh <br/>
 
 # Power-off switch
 https://raspberrypi.stackexchange.com/questions/117013/raspberry-pi-4-b-gpio-boot-and-shutdown-buttons
+![Power-off switch](power_off_switch.png)
 
+Power soft button power off, you need a separate momentary switch with 24v LED. 16mm switch is recommended to use the button mount for the skirt. After wiring to the raspberry pi, you need to add the following lines to /boot/config.txt
+
+# For shutdown
+dtoverlay=gpio-shutdown,gpio_pin=21
 
 
 # Official documentation of the product
