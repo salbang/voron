@@ -17,7 +17,8 @@ With raspberry pi 4b, shutdown should be automatic with the setting.
 # For CM4 connected to Manta M4P, M5P or M8P:
 The GPIO14 does not go into 0V state automatically after shutdown of CM4. To trigger the complete shutdown do the following. <br/>
 Copy the set-gpio-14-down.sh file to /usr/lib/systemd/system-shutdown/ <br/>
-Use sudo cp set-gpio-14-down.sh /usr/lib/systemd/system-shutdown/ <br/>
+Use: <br/>
+sudo cp set-gpio-14-down.sh /usr/lib/systemd/system-shutdown/ <br/>
 Check the permission and ownership are correct: <br/>
 pi@trident250:/usr/lib/systemd/system-shutdown $ ll <br/>
 total 4 <br/>
