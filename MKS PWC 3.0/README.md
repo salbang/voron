@@ -8,7 +8,7 @@ Wrong wiring can damage your raspberry pi, mcu board, and PSU. Double check corr
 You don't need to use POW-DET of MKS PWC 3.0.
 For POW-OFF, connect 5V to RPI 5V, GND to GND, and PW-OFF to GPIO-14 (UART0 TX). You may use PIN 4, 6, and 8 of GPIO which are in a row.
 
-To make the PWC 3.0 keep powered on assuming you connected signal line of POW-OFF of PWC 3.0 to GPIO14 (uart0), following line should be added to /boot/config.txt
+To make the PWC 3.0 keep powered on assuming you connected signal line of POW-OFF of PWC 3.0 to GPIO14 (uart0), following line should be added to /boot/config.txt (/boot/firmware/config.txt for bookworm)
 
 enable_uart=1
 
@@ -31,7 +31,7 @@ sudo chgrp root set-gpio-14-down.sh <br/>
 https://raspberrypi.stackexchange.com/questions/117013/raspberry-pi-4-b-gpio-boot-and-shutdown-buttons
 ![Power-off switch](power_off_switch.png)
 
-For soft button power off, you need a separate momentary switch with 24v LED. 16mm switch is recommended to use the button mount for the skirt. After wiring to the raspberry pi, you need to add the following lines to /boot/config.txt
+For soft button power off, you need a separate momentary switch with 24v LED. 16mm switch is recommended to use the button mount for the skirt. After wiring to the raspberry pi, you need to add the following lines to /boot/config.txt (/boot/firmware/config.txt for bookworm)
 
 \# For shutdown <br/>
 dtoverlay=gpio-shutdown,gpio_pin=21
