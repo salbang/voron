@@ -1,0 +1,1 @@
+*/2 * * * * /home/pi/local/bin/monitor_eth.sh
