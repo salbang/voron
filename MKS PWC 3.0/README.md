@@ -14,6 +14,33 @@ enable_uart=1
 
 With raspberry pi 4b, shutdown should be automatic with the setting.
 
+# For Leviathan
+Since, with a Leviathan board, you may want to use GPIO 14 for UART communication with the Leviathan board. Then you may use UART2 for the soft-on purpose. To do this:
+
+sudo vim /boot/firmware/config.txt
+
+Add somewhere
+
+\# Enable uart2 <br/>
+dtoverlay=uart2
+
+\# For soft-button turnon with gpio_pin=0 <br/>
+gpio=0=op,dh
+
+For shutdown: <br/>
+The GPIO0 does not go into 0V state automatically after shutdown of RPi. To trigger the complete shutdown do the following. <br/>
+Copy the set-gpio-0-down.sh file to /usr/lib/systemd/system-shutdown/ <br/>
+Use: <br/>
+sudo cp set-gpio-0-down.sh /usr/lib/systemd/system-shutdown/ <br/>
+Check the permission and ownership are correct: <br/>
+pi@trident250:/usr/lib/systemd/system-shutdown $ ll <br/>
+total 4 <br/>
+-rwxr-xr-x 1 root root 139 Mar  5 13:20 set-gpio-0-down.sh <br/>
+You may do <br/>
+sudo chown root set-gpio-0-down.sh <br/>
+sudo chgrp root set-gpio-0-down.sh <br/>
+
+
 # For CM4 connected to Manta M4P, M5P or M8P:
 The GPIO14 does not go into 0V state automatically after shutdown of CM4. To trigger the complete shutdown do the following. <br/>
 Copy the set-gpio-14-down.sh file to /usr/lib/systemd/system-shutdown/ <br/>
